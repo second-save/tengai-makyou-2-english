@@ -1,5 +1,12 @@
 # Changelog
 
+## v1.1.1 — 2026-11-25
+
+- Fixed a freeze when choosing CANNON in a ship battle. The ship weapon
+  names are internal lookup keys copied into small 8-byte buffers; their
+  English versions overflowed them. They are back to the original Japanese
+  (the menu shows icons, so nothing on screen changes).
+
 ## v1.1.0 — 2026-11-17
 
 - Fixed overlapping text in the act prologues ("A thousand years ago…"),

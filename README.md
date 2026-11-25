@@ -1,4 +1,4 @@
-# Far East of Eden II: Manjimaru — English Translation v1.1.0
+# Far East of Eden II: Manjimaru — English Translation v1.1.1
 
 An English translation patch for **Tengai Makyou II: Manji Maru**, Hudson's
 2005 Nintendo DS remake of the 1992 PC Engine CD classic. It was never
@@ -9,13 +9,13 @@ released in English, until now.
 ## Download
 
 Get the zip from the
-[v1.1.0 release](https://github.com/ACR-GD/tengai-makyou-2-english/releases/tag/v1.1.0). It contains the BPS patch and a
+[v1.1.1 release](https://github.com/second-save/tengai-makyou-2-english/releases/tag/v1.1.1). It contains the BPS patch and a
 README. The game is not included: patch your own dump of the Japanese ROM.
 
 | | Size | CRC32 | SHA-1 |
 |---|---|---|---|
 | Japanese ROM (input) | 134,217,728 | `0DF79A80` | `0717fcc412af42c2b1d7ac9178974e1259fb7c63` |
-| English ROM (output) | 136,634,280 | `29B4CA1B` | `f252e5dd42837afaf948fa4eb25ed2b41bf0612c` |
+| English ROM (output) | 136,634,280 | `C1FE3254` | `57d14b83bddebb181f2da338521c9da109d20777` |
 
 Apply with [Rom Patcher JS](https://www.marcrobledo.com/RomPatcher.js/),
 Flips or MultiPatch.
@@ -25,7 +25,11 @@ conversations (sudden poison, deaths, revivals, level jumps). v1.0.1 and later
 fix this, but can't repair a save that was already damaged. Patch the original
 Japanese ROM, not an older English ROM.
 
-## What's new in v1.1.0
+## What's new in v1.1.1
+
+- Fixed: the game froze when you chose CANNON in a battle on the ship.
+
+## What was new in v1.1.0
 
 - No more overlapping text in the act prologues, the boss lines in battle and
   the save/load screen title.
@@ -73,7 +77,7 @@ run them on your own dump.
 Check a patched ROM yourself:
 
 ```sh
-python3 tools/bps_apply.py "Japanese.nds" "Tengai Makyou II - Manji Maru (English v1.1.0).bps" "English.nds"
+python3 tools/bps_apply.py "Japanese.nds" "Tengai Makyou II - Manji Maru (English v1.1.1).bps" "English.nds"
 ```
 
 It stops on a wrong source ROM, and otherwise writes a ROM that matches the
